@@ -8,5 +8,6 @@ const router = express.Router();
 
 router.post("/make", utilitiesController.makeGzipData);
 router.post("/unzip", utilitiesController.destrucGzipData);
+router.get("/ping", utilitiesController.healthCheck);
 
 export default router;
